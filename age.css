@@ -1,0 +1,10 @@
+.container{
+    background-color:rgb(230, 225, 225)
+}
+.intro{
+    margin:50px 25px 50px 25px;
+    background-color: white;
+}
+.intro button{
+    background-color: blue;
+}
