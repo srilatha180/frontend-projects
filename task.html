@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login and register form</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="task.css">
+    </head>
+    <body class="container mt-2" text-white>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="nav nav-pills text-center">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active text-white"
+                           data-bs-toggle="tab">Home</a>
+                 </li>
+
+                <li class="nav-item">
+           
+                 <a href="#Register" class="nav-link text-white"
+                      data-bs-toggle="tab">Register</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#Login" class="nav-link text-white"
+                    data-bs-toggle="tab">Login</a>
+               </li>
+           </ul>
+                    
+        </div>
+    </div>
+
+
+    
+</nav>
+
+<div class="tab-content">
+
+    <div id="home" class="tab-pane show active">
+        <h3 class="text-center m-4">Welcome to Codegene Solutions Pvt.Ltd</h3>
+        <p class="text-center m-4">If your visting first time our web site!. please register here. <a href="#Register" data-bs-toggle="tab">Register here</a></p>
+        <p class="text-center m-4">If your already registered with our website !.please login here. <a href="#Login" data-bs-toggle="tab">Login here</a></p>
+    </div>
+
+    <div id="Register" class="tab-pane">
+        <h4 class="m-4">Please register here...</h4>
+        <button class="btn btn-success m-4" data-bs-toggle="modal" data-bs-target="#myModal">Register</button>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="text-dark text-center">Registration form</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label class="form-label">Enter your name:</label>
+                        <input type="text" class="form-control m-2" placeholder="enter name">
+                        <label class="form-label">Enter your email:</label>
+                        <input type="email" class="form-control m-2" placeholder="enter mail">
+                        <label class="form-label">Enter your password:</label>
+                        <input type="password" class="form-control m-2" placeholder="enter password">
+                        <label class="form-label">Enter your phone number:</label>
+                        <input type="tel" class="form-control m-2" placeholder="enter phone number">
+                        <label class="form-label">select your gender</label><br>
+                        <input type="radio" class="form-check-input" name="gender">Male <br>
+                        <input type="radio" class="form-check-input" name="gender">Female <br>
+                        <input type="radio" class="form-check-input" name="gender">other <br>
+                        <label class="form-label">Please select your highest qualification</label>
+                        <select class="form-select">
+                            <option>Bachelors</option>
+                            <option>Post graduate</option>
+                            <option>Diplomaa</option>
+                            <option>12 th</option>
+                            <option>Tenth</option>
+
+                        </select>
+                        <label class="form-label">Upload file</label>
+                        <input type="file">
+                        
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Register</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Login" class="tab-pane">
+        <h3 class="m-4">please login here....</h3>
+       <button type="button" class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#myLogin">Login</button>
+       <div class="modal" id="myLogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center text-dark">Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                        <label class="form-label">Enter your email:</label>
+                        <input type="email" class="form-control m-2" placeholder="enter mail">
+                        <label class="form-label">Enter your password:</label>
+                        <input type="password" class="form-control m-2" placeholder="enter password">
+
+
+                </div>
+                 <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Login</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+       </div>
+       
+
+
+    </div>
+
+</div>
+    </body>
+</html>
